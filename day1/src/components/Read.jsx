@@ -1,20 +1,20 @@
 import React from 'react'
 
 const Read = (props) => {
-    console.log(props);
-    const users = props.users;
-    const setUsers = props.setUsers;
-  
-    const renderUser =users.map((users,index)=>{
-    return (
-    <li key ={index}>{users.name}</li>
-  )
-})
+  const users= props.users;
+  // const setUsers = props.setUsers;
+  // console.log(props.users[0]);
+  const render= users.map((user, index) => {
+    return  <li key={index} > {index+1} {user.name} and he is  {user.age}</li>
+    
+    
+  })
+
 
   return (
     <div>
-        <h1>user data</h1>
-        <ol>{renderUser}</ol>
+      <h1>user data </h1>
+      <li>{render}</li>
     </div>
   )
 }
