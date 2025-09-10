@@ -17,7 +17,7 @@ const App = () => {
  
 
   return (
-    <div>
+    <div className='flex p-10 border-2 m-2 gap-2 w-full h-92'>
       <Create todos={todos} setTodos= {setTodos}/>
       <Read todos={todos} setTodos= {setTodos}/>
       
